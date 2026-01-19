@@ -85,6 +85,11 @@
     "desc": "The \"Range\" header you sent makes no sense"
   },
   {
+    "code": 417,
+    "reason": "Expectation Failed",
+    "desc": "The expectation indicated by your \"Expect\" header cannot be met"
+  },
+  {
     "code": 418,
     "reason": "I'm a teapot",
     "desc": "The server refuses the attempt to brew coffee with a teapot"
