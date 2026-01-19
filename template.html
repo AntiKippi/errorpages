@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>$code - $reason</title>
+
+  <!-- Prefetch the resources to mostly avoid the page appearing without style or with the wrong font directly after loading -->
+  <link rel="preload" href="assets/errorpage.css" as="style" />
+  <link rel="preload" href="assets/Iosevka_ASCII.woff2" as="font" />
+ 
+  <link rel="stylesheet" href="assets/errorpage.css" />
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <h1 class="glitch" data-text="$code">$code</h1>
+      <p class="subtext">$reason</p>
+      <p class="desc">$desc</p>
+      <p style="font-size: 64px;">&nbsp;</p>
+    </div>
+  </div>
+</body>
+</html>
