@@ -1,0 +1,202 @@
+[
+  {
+    "code": 400,
+    "reason": "Bad Request",
+    "desc": "Your request is invalid"
+  },
+  {
+    "code": 401,
+    "reason": "Unauthorized",
+    "desc": "Your request lacks valid authentication credentials for the requested resource"
+  },
+  {
+    "code": 402,
+    "reason": "Payment Required",
+    "desc": "You need to pay to access this content"
+  },
+  {
+    "code": 403,
+    "reason": "Forbidden",
+    "desc": "You are not allowed to access this page"
+  },
+  {
+    "code": 404,
+    "reason": "Not Found",
+    "desc": "The page you requested does not exist"
+  },
+  {
+    "code": 405,
+    "reason": "Method Not Allowed",
+    "desc": "The target resource does not support this HTTP method"
+  },
+  {
+    "code": 406,
+    "reason": "Not Acceptable",
+    "desc": "Some \"Accept\" header you requested cannot be fulfilled"
+  },
+  {
+    "code": 407,
+    "reason": "Proxy Authentication Required",
+    "desc": "Your request lacks valid authentication credentials for the proxy"
+  },
+  {
+    "code": 408,
+    "reason": "Request Timeout",
+    "desc": "Your request was too slow"
+  },
+  {
+    "code": 409,
+    "reason": "Conflict",
+    "desc": "Your request conflicts with the current state of the target resource"
+  },
+  {
+    "code": 410,
+    "reason": "Gone",
+    "desc": "The page you requested was permanently removed"
+  },
+  {
+    "code": 411,
+    "reason": "Length Required",
+    "desc": "Your request is missing the \"Content-Length\" header"
+  },
+  {
+    "code": 412,
+    "reason": "Precondition Failed",
+    "desc": "Some condition you requested with your headers could not be fulfilled"
+  },
+  {
+    "code": 413,
+    "reason": "Content Too Large",
+    "desc": "You send more data than allowed"
+  },
+  {
+    "code": 414,
+    "reason": "URI Too Long",
+    "desc": "The URL is too long"
+  },
+  {
+    "code": 415,
+    "reason": "Unsupported Media Type",
+    "desc": "Your request payload uses an unsupported format, \"Content-Type\" or \"Content-Encoding\" headers"
+  },
+  {
+    "code": 416,
+    "reason": "Range Not Satisfiable",
+    "desc": "The \"Range\" header you sent makes no sense"
+  },
+  {
+    "code": 418,
+    "reason": "I'm a teapot",
+    "desc": "The server refuses the attempt to brew coffee with a teapot"
+  },
+  {
+    "code": 420,
+    "reason": "Enhance Your Calm",
+    "desc": "You are sending request way too fast, chill a bit"
+  },
+  {
+    "code": 421,
+    "reason": "Misdirected Request",
+    "desc": "The request was directed to a server that is not able to produce a response"
+  },
+  {
+    "code": 422,
+    "reason": "Unprocessable Content",
+    "desc": "Your request was well-formed but was unable to be followed due to semantic errors"
+  },
+  {
+    "code": 423,
+    "reason": "Locked",
+    "desc": "The resource you are trying to access is locked"
+  },
+  {
+    "code": 424,
+    "reason": "Failed Dependency",
+    "desc": "Your request failed due to failure of a previous request"
+  },
+  {
+    "code": 425,
+    "reason": "Too Early",
+    "desc": "The server is unwilling to risk processing a request that might be replayed"
+  },
+  {
+    "code": 426,
+    "reason": "Upgrade Required",
+    "desc": "The current protocol is not supported, please upgrade to a different protocol"
+  },
+  {
+    "code": 428,
+    "reason": "Precondition Required",
+    "desc": "Your request must be conditional"
+  },
+  {
+    "code": 429,
+    "reason": "Too Many Requests",
+    "desc": "You are sending requests too fast"
+  },
+  {
+    "code": 431,
+    "reason": "Request Header Fields Too Large",
+    "desc": "The header fields you send are too large"
+  },
+  {
+    "code": 451,
+    "reason": "Unavailable For Legal Reasons",
+    "desc": "You requested a resource that cannot legally be provided"
+  },
+  {
+    "code": 500,
+    "reason": "Internal Server Error",
+    "desc": "The server could not process your request"
+  },
+  {
+    "code": 501,
+    "reason": "Not Implemented",
+    "desc": "The resource does currently not support the requested functionality"
+  },
+  {
+    "code": 502,
+    "reason": "Bad Gateway",
+    "desc": "The proxy received an invalid response when requesting your resource"
+  },
+  {
+    "code": 503,
+    "reason": "Service Unavailable",
+    "desc": "The server is currently unable to serve your request, please try again later"
+  },
+  {
+    "code": 504,
+    "reason": "Gateway Timeout",
+    "desc": "The proxy encountered a timeout when requesting your resource"
+  },
+  {
+    "code": 505,
+    "reason": "HTTP Version Not Supported",
+    "desc": "The HTTP version you used for the request is not supported by the server"
+  },
+  {
+    "code": 506,
+    "reason": "Variant Also Negotiates",
+    "desc": "Internal server configuration error: the chosen variant is itself configured to engage in content negotiation, so is not a proper negotiation endpoint"
+  },
+  {
+    "code": 507,
+    "reason": "Insufficient Storage",
+    "desc": "The server has not enough free space to store this"
+  },
+  {
+    "code": 508,
+    "reason": "Loop Detected",
+    "desc": "The server detected an infinite loop while processing the request"
+  },
+  {
+    "code": 510,
+    "reason": "Not Extended",
+    "desc": "You requested an HTTP Extension that should be used to process the request, but the extension is not supported"
+  },
+  {
+    "code": 511,
+    "reason": "Network Authentication Required",
+    "desc": "You need to authenticate to gain network access"
+  }
+]
