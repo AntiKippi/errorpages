@@ -65,7 +65,7 @@ body, html {
   
   /* Remove annoying font padding at top which destroyed 
      the centering, but still keep it at the bottom */
-  line-height: 1;
+  line-height: 0.875;
   padding-bottom: 32px;
 }
 
