@@ -33,8 +33,8 @@ body, html {
 }
 
 .container {
-  /* Prevent text inside from getting longer than 50% of page width */
-  width: 50%;
+  /* Prevent text inside from getting too wide */
+  width: 61.8%;
   
   /* Prevent text being pushed out of the viewbox if viewport height gets <= container height */
   max-height: 100%;
