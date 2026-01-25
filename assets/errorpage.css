@@ -1,10 +1,12 @@
 @font-face {
   font-family: 'Iosevka ASCII';
-  font-display: swap;
   font-weight: 400;
   font-stretch: normal;
   font-style: normal;
   src: url('Iosevka_ASCII.woff2') format('woff2');
+  
+  /* Wait for the font to be loaded before rendering text */
+  font-display: block;
 }
 
 * {
