@@ -8,18 +8,22 @@
 }
 
 * {
+  /* Remove default padding and margin */
   margin: 0;
   padding: 0;
 }
 
 body, html {
+  /* Fill the whole viewport for centering */
   width: 100%;
   height: 100%;
+  
   background-color: black;
   font-family: 'Iosevka ASCII', system-ui, monospace;
 }
 
 .wrapper {
+  /* Again fill the whole viewport and center everything inside wrapper */
   width: 100%;
   height: 100%;
   display: flex;
@@ -29,11 +33,15 @@ body, html {
 }
 
 .container {
+  /* Prevent text inside from getting longer than 50% of page width */
   width: 50%;
+  
+  /* Prevent text being pushed out of the viewbox if viewport height gets <= container height */
   max-height: 100vh;
 }
 
 .container-spacer {
+  /* Add some spacing at top and bottom to have it look better if we need to resort to scrolling */
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -54,16 +62,27 @@ body, html {
   color: white;
   position: relative;
   font-size: 256px;
+  
+  /* Remove annoying font padding at top which destroyed 
+     the centering, but still keep it at the bottom */
   line-height: 1;
   padding-bottom: 32px;
 }
 
 .glitch::before, .glitch::after {
   color: white;
+  /* Fill with text of data-text attribute to enable setting the content from HTML,
+     enabling to use the same CSS for every error page */
   content: attr(data-text);
+  
+  /* Have the "glitch" elements overlay the text */
   position: absolute;
+  
+  /* Needed for proper alignment of the glitch elements */
   width: 100%;
   height: 100%;
+  
+  /* Needed to make the "shifting" glich effect work */
   background: black;
 }
 .glitch::before {
@@ -79,6 +98,8 @@ body, html {
   left: -0.03em;
   text-shadow: -0.02em 0 blue;
   animation-name: glitch-animation-2;
+  /* Timed so that the lenght until the whole cycle repeats is long but there is still a noticeable
+     change in every iteration giving the glitch effect a "pseduo-random" touch. */
   animation-duration: 2.5s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
