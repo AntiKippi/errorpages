@@ -29,7 +29,13 @@ body, html {
 }
 
 .container {
-  max-width: 50%;
+  width: 50%;
+  max-height: 100vh;
+}
+
+.container-spacer {
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .subtext {
@@ -48,6 +54,8 @@ body, html {
   color: white;
   position: relative;
   font-size: 256px;
+  line-height: 1;
+  padding-bottom: 32px;
 }
 
 .glitch::before, .glitch::after {
