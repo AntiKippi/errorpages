@@ -97,7 +97,7 @@ body, html {
   left: 0.03em;
   text-shadow: -0.02em 0 red;
   animation-name: glitch-animation-1;
-  animation-duration: 2s;
+  animation-duration: 2.75s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
@@ -108,7 +108,7 @@ body, html {
   animation-name: glitch-animation-2;
   /* Timed so that the lenght until the whole cycle repeats is long but there is still a noticeable
      change in every iteration giving the glitch effect a "pseduo-random" touch. */
-  animation-duration: 2.5s;
+  animation-duration: 3.25s;
   animation-timing-function: linear;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
@@ -116,47 +116,87 @@ body, html {
 
 @keyframes glitch-animation-1 {
   0% { clip: rect(0.3725em, auto, 0.7725em, auto); }
-  5% { clip: rect(0.6225em, auto, -0.0075em, auto); }
-  10% { clip: rect(-0.1275em, auto, 0.7425em, auto); }
-  15% { clip: rect(0.4125em, auto, 1.0725em, auto); }
-  20% { clip: rect(0.0125em, auto, 0.7225em, auto); }
-  25% { clip: rect(1.0125em, auto, 0.0925em, auto); }
-  30% { clip: rect(0.5925em, auto, 0.8625em, auto); }
-  35% { clip: rect(0.8625em, auto, 0.0625em, auto); }
-  40% { clip: rect(0.4025em, auto, -0.0175em, auto); }
-  45% { clip: rect(1.2625em, auto, 0.3025em, auto); }
-  50% { clip: rect(0.1225em, auto, 1.1625em, auto); }
-  55% { clip: rect(0.5525em, auto, 0.6625em, auto); }
-  60% { clip: rect(0.1825em, auto, 0.5325em, auto); }
-  65% { clip: rect(0.8725em, auto, 0.2525em, auto); }
-  70% { clip: rect(0.6325em, auto, -0.1375em, auto); }
-  75% { clip: rect(0.5925em, auto, 0.6225em, auto); }
-  80% { clip: rect(0.9125em, auto, 0.7325em, auto); }
-  85% { clip: rect(0.9625em, auto, 0.0825em, auto); }
-  90% { clip: rect(-0.0275em, auto, 0.9925em, auto); }
-  95% { clip: rect(1.3025em, auto, 1.1125em, auto); }
+  0.625%{ clip: rect(0.3725em, auto, 0.7725em, auto); }
+  4.375%{ clip: rect(0.6225em, auto, -0.0075em, auto); }
+  5.625%{ clip: rect(0.6225em, auto, -0.0075em, auto); }
+  9.375% { clip: rect(-0.1275em, auto, 0.7425em, auto); }
+  10.625%{ clip: rect(-0.1275em, auto, 0.7425em, auto); }
+  14.375%{ clip: rect(0.4125em, auto, 1.0725em, auto); }
+  15.625%{ clip: rect(0.4125em, auto, 1.0725em, auto); }
+  19.375% { clip: rect(0.0125em, auto, 0.7225em, auto); }
+  20.625%{ clip: rect(0.0125em, auto, 0.7225em, auto); }
+  24.375%{ clip: rect(1.0125em, auto, 0.0925em, auto); }
+  25.625%{ clip: rect(1.0125em, auto, 0.0925em, auto); }
+  29.375% { clip: rect(0.5925em, auto, 0.8625em, auto); }
+  30.625%{ clip: rect(0.5925em, auto, 0.8625em, auto); }
+  34.375%{ clip: rect(0.8625em, auto, 0.0625em, auto); }
+  35.625%{ clip: rect(0.8625em, auto, 0.0625em, auto); }
+  39.375% { clip: rect(0.4025em, auto, -0.0175em, auto); }
+  40.625%{ clip: rect(0.4025em, auto, -0.0175em, auto); }
+  44.375%{ clip: rect(1.2625em, auto, 0.3025em, auto); }
+  45.625%{ clip: rect(1.2625em, auto, 0.3025em, auto); }
+  49.375% { clip: rect(0.1225em, auto, 1.1625em, auto); }
+  50.625%{ clip: rect(0.1225em, auto, 1.1625em, auto); }
+  54.375%{ clip: rect(0.5525em, auto, 0.6625em, auto); }
+  55.625%{ clip: rect(0.5525em, auto, 0.6625em, auto); }
+  59.375% { clip: rect(0.1825em, auto, 0.5325em, auto); }
+  60.625%{ clip: rect(0.1825em, auto, 0.5325em, auto); }
+  64.375%{ clip: rect(0.8725em, auto, 0.2525em, auto); }
+  65.625%{ clip: rect(0.8725em, auto, 0.2525em, auto); }
+  69.375% { clip: rect(0.6325em, auto, -0.1375em, auto); }
+  70.625%{ clip: rect(0.6325em, auto, -0.1375em, auto); }
+  74.375%{ clip: rect(0.5925em, auto, 0.6225em, auto); }
+  75.625%{ clip: rect(0.5925em, auto, 0.6225em, auto); }
+  79.375% { clip: rect(0.9125em, auto, 0.7325em, auto); }
+  80.625%{ clip: rect(0.9125em, auto, 0.7325em, auto); }
+  84.375%{ clip: rect(0.9625em, auto, 0.0825em, auto); }
+  85.625%{ clip: rect(0.9625em, auto, 0.0825em, auto); }
+  89.375% { clip: rect(-0.0275em, auto, 0.9925em, auto); }
+  90.625%{ clip: rect(-0.0275em, auto, 0.9925em, auto); }
+  94.375%{ clip: rect(1.3025em, auto, 1.1125em, auto); }
+  95.625%{ clip: rect(1.3025em, auto, 1.1125em, auto); }
   100% { clip: rect(0.2525em, auto, -0.0275em, auto); }
 }
 @keyframes glitch-animation-2 {
   0% { clip: rect(0.8325em, auto, 1.2225em, auto); }
-  5% { clip: rect(0.8025em, auto, 0.0325em, auto); }
-  10% { clip: rect(0.3425em, auto, 0.9825em, auto); }
-  15% { clip: rect(0.7225em, auto, 0.1325em, auto); }
-  20% { clip: rect(0.4325em, auto, 0.6425em, auto); }
-  25% { clip: rect(0.7125em, auto, 0.6125em, auto); }
-  30% { clip: rect(0.2925em, auto, 0.9225em, auto); }
-  35% { clip: rect(1.1825em, auto, 0.62em, auto);}
-  40% { clip: rect(0.1625em, auto, 0.5325em, auto); }
-  45% { clip: rect(1.3125em, auto, 0.8425em, auto); }
-  50% { clip: rect(0.1525em, auto, 0.7725em, auto); }
-  55% { clip: rect(0.9725em, auto, 1.0325em, auto); }
-  60% { clip: rect(0.2825em, auto, 0.1725em, auto); }
-  65% { clip: rect(0.5325em, auto, 1.1525em, auto); }
-  70% { clip: rect(0.2325em, auto, 1.0025em, auto); }
-  75% { clip: rect(0.2025em, auto, 1.0425em, auto); }
-  80% { clip: rect(0.4125em, auto, -0.0775em, auto); }
-  85% { clip: rect(1.0625em, auto, 1.0925em, auto); }
-  90% { clip: rect(1.1625em, auto, 1.0025em, auto); }
-  95% { clip: rect(0.7025em, auto, 0.3425em, auto); }
+  0.625%{ clip: rect(0.8325em, auto, 1.2225em, auto); }
+  4.375%{ clip: rect(0.8025em, auto, 0.0325em, auto); }
+  5.625%{ clip: rect(0.8025em, auto, 0.0325em, auto); }
+  9.375% { clip: rect(0.3425em, auto, 0.9825em, auto); }
+  10.625%{ clip: rect(0.3425em, auto, 0.9825em, auto); }
+  14.375%{ clip: rect(0.7225em, auto, 0.1325em, auto); }
+  15.625%{ clip: rect(0.7225em, auto, 0.1325em, auto); }
+  19.375% { clip: rect(0.4325em, auto, 0.6425em, auto); }
+  20.625%{ clip: rect(0.4325em, auto, 0.6425em, auto); }
+  24.375%{ clip: rect(0.7125em, auto, 0.6125em, auto); }
+  25.625%{ clip: rect(0.7125em, auto, 0.6125em, auto); }
+  29.375% { clip: rect(0.2925em, auto, 0.9225em, auto); }
+  30.625%{ clip: rect(0.2925em, auto, 0.9225em, auto); }
+  34.375%{ clip: rect(1.1825em, auto, 0.62em, auto); }
+  35.625%{ clip: rect(1.1825em, auto, 0.62em, auto); }
+  39.375% { clip: rect(0.1625em, auto, 0.5325em, auto); }
+  40.625%{ clip: rect(0.1625em, auto, 0.5325em, auto); }
+  44.375%{ clip: rect(1.3125em, auto, 0.8425em, auto); }
+  45.625%{ clip: rect(1.3125em, auto, 0.8425em, auto); }
+  49.375% { clip: rect(0.1525em, auto, 0.7725em, auto); }
+  50.625%{ clip: rect(0.1525em, auto, 0.7725em, auto); }
+  54.375%{ clip: rect(0.9725em, auto, 1.0325em, auto); }
+  55.625%{ clip: rect(0.9725em, auto, 1.0325em, auto); }
+  59.375% { clip: rect(0.2825em, auto, 0.1725em, auto); }
+  60.625%{ clip: rect(0.2825em, auto, 0.1725em, auto); }
+  64.375%{ clip: rect(0.5325em, auto, 1.1525em, auto); }
+  65.625%{ clip: rect(0.5325em, auto, 1.1525em, auto); }
+  69.375% { clip: rect(0.2325em, auto, 1.0025em, auto); }
+  70.625%{ clip: rect(0.2325em, auto, 1.0025em, auto); }
+  74.375%{ clip: rect(0.2025em, auto, 1.0425em, auto); }
+  75.625%{ clip: rect(0.2025em, auto, 1.0425em, auto); }
+  79.375% { clip: rect(0.4125em, auto, -0.0775em, auto); }
+  80.625%{ clip: rect(0.4125em, auto, -0.0775em, auto); }
+  84.375%{ clip: rect(1.0625em, auto, 1.0925em, auto); }
+  85.625%{ clip: rect(1.0625em, auto, 1.0925em, auto); }
+  89.375% { clip: rect(1.1625em, auto, 1.0025em, auto); }
+  90.625%{ clip: rect(1.1625em, auto, 1.0025em, auto); }
+  94.375%{ clip: rect(0.7025em, auto, 0.3425em, auto); }
+  95.625%{ clip: rect(0.7025em, auto, 0.3425em, auto); }
   100% { clip: rect(0.6225em, auto, 0.6525em, auto); }
 }
